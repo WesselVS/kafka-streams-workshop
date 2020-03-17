@@ -9,11 +9,10 @@ trait ExerciseBase extends FunSuite with Matchers {
   // To solve exercises in Scala instead of Java, comment out the import
   // line and toBuilder method below and include the Scala versions instead
 
-  import kafkastreams.javaexercises._
-  def toBuilder(builder: StreamsBuilderJ) = builder
 
-//  import kafkastreams.scalaexercises._
-//  def toBuilder(builder: StreamsBuilderJ) = new StreamsBuilder(builder)
+
+  import kafkastreams.scalaexercises._
+  def toBuilder(builder: StreamsBuilderJ) = new StreamsBuilder(builder)
 
   val exercise0 = new Exercise_0_HelloKafkaStreams
   val exercise1 = new Exercise_1_FilterAndTransform
